@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "857bd9a8-e3ad-46a5-8b71-87458c9a7f8c",
+		"name": "Hospital_API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8000/api/v1/doctors/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "doctor1",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "doc1",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "doc1@doc1.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "pass",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/doctors/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"doctors",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api/v1/doctors/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "mj1",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "username",
+							"value": "mj1",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mj1@mj1.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "pass",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/v1/doctors/login",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"doctors",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api//v1/patients/register",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDA4YmRiZmNhMzQyNjI4YTMyN2U1MmQiLCJuYW1lIjoibWoxIiwiZW1haWwiOiJtajFAbWoxLmNvbSIsInVzZXJuYW1lIjoibWoxIiwicGFzc3dvcmQiOiJwYXNzIiwiY3JlYXRlZEF0IjoiMjAyMy0wMy0wOFQxNjo1NDoyMy43MTlaIiwidXBkYXRlZEF0IjoiMjAyMy0wMy0wOFQxNjo1NDoyMy43MTlaIiwiX192IjowLCJpYXQiOjE2NzgyOTQ5MTksImV4cCI6MTY3ODc5NDkxOX0.HF9s_Rkzk7Pdzd8c3PHXnsNN-7BKy0hp0NXK0TEw8sM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDA4YmRiZmNhMzQyNjI4YTMyN2U1MmQiLCJuYW1lIjoibWoxIiwiZW1haWwiOiJtajFAbWoxLmNvbSIsInVzZXJuYW1lIjoibWoxIiwicGFzc3dvcmQiOiJwYXNzIiwiY3JlYXRlZEF0IjoiMjAyMy0wMy0wOFQxNjo1NDoyMy43MTlaIiwidXBkYXRlZEF0IjoiMjAyMy0wMy0wOFQxNjo1NDoyMy43MTlaIiwiX192IjowLCJpYXQiOjE2NzgyOTQ0ODUsImV4cCI6MTY3ODc5NDQ4NX0.pL4-aWOw_9kTGRxaOCB2guq4lwtfdgzlJFt-6H1O_TQ",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "test",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "9777245516",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api//v1/patients/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"",
+						"v1",
+						"patients",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api//v1/patients/6408f1eadef77503453325e2/create_report",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDA4YmRiZmNhMzQyNjI4YTMyN2U1MmQiLCJuYW1lIjoibWoxIiwiZW1haWwiOiJtajFAbWoxLmNvbSIsInVzZXJuYW1lIjoibWoxIiwicGFzc3dvcmQiOiJwYXNzIiwiY3JlYXRlZEF0IjoiMjAyMy0wMy0wOFQxNjo1NDoyMy43MTlaIiwidXBkYXRlZEF0IjoiMjAyMy0wMy0wOFQxNjo1NDoyMy43MTlaIiwiX192IjowLCJpYXQiOjE2NzgzMDc5NzUsImV4cCI6MTY3ODgwNzk3NX0._2lFA3iqUeZDLbecHLSAt3PAbjgu-fxhtvTjpYOwpLM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "status",
+							"value": "negative",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api//v1/patients/6408f1eadef77503453325e2/create_report",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"",
+						"v1",
+						"patients",
+						"6408f1eadef77503453325e2",
+						"create_report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api//v1/patients/6408f1eadef77503453325e2/all_reports",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDA4YmRiZmNhMzQyNjI4YTMyN2U1MmQiLCJuYW1lIjoibWoxIiwiZW1haWwiOiJtajFAbWoxLmNvbSIsInVzZXJuYW1lIjoibWoxIiwicGFzc3dvcmQiOiJwYXNzIiwiY3JlYXRlZEF0IjoiMjAyMy0wMy0wOFQxNjo1NDoyMy43MTlaIiwidXBkYXRlZEF0IjoiMjAyMy0wMy0wOFQxNjo1NDoyMy43MTlaIiwiX192IjowLCJpYXQiOjE2NzgzMDc5NzUsImV4cCI6MTY3ODgwNzk3NX0._2lFA3iqUeZDLbecHLSAt3PAbjgu-fxhtvTjpYOwpLM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "status",
+							"value": "negative",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api//v1/patients/6408f1eadef77503453325e2/all_reports",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"",
+						"v1",
+						"patients",
+						"6408f1eadef77503453325e2",
+						"all_reports"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8000/api//v1/reports/negative",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api//v1/reports/negative",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"",
+						"v1",
+						"reports",
+						"negative"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
