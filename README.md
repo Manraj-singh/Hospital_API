@@ -106,7 +106,6 @@ secretkeys.js
 walkthrough: 
 - config folder contains all the configurations like mongoose /passport
 - controllers contains all the code which executes for a particular route
-- components folder has all the components created
 - middlewares folder contains custom middleware like precheks before registering /login after middle ware controllers are called
 
 - models folder has all the schemas defined like doctor,patient,report
